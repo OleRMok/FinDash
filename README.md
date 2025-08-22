@@ -9,7 +9,7 @@ It’s designed to simulate a modern banking/finance-style app with interactive 
 - **Calculator Page** → A functional calculator for quick calculations.  
 - **Contact Page** → Basic form setup for user interaction.
 
-You can view the live version here: [Live Site on GitHub Pages](https://yourusername.github.io/luxfinance/)
+You can view the live version here: [Live Site on GitHub Pages](https://olermok.github.io/FinDash/)
 
 ---
 
