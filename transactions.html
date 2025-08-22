@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Ole Mokoma | Transactions</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body class="transactions">
+
+  <!-- ===== NAVIGATION ===== -->
+  <header>
+    <nav class="navbar">
+      <div class="logo">Ole Mokoma</div>
+      <ul class="nav-links">
+        <li><a href="index.html">Dashboard</a></li>
+        <li><a href="transactions.html" class="active">Transactions</a></li>
+        <li><a href="analytics.html">Analytics</a></li>
+        <li><a href="calculator.html">Calculator</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+      <button class="nav-toggle" aria-label="Toggle menu">&#9776;</button>
+    </nav>
+  </header>
+
+  <!-- ===== MAIN CONTENT ===== -->
+  <main>
+    <section class="transactions-hero">
+      <h1>Transactions</h1>
+      <p>Manage your transaction records below.</p>
+    </section>
+
+    <!-- Transaction Table -->
+    <section class="transactions-table-section">
+      <button id="add-transaction-btn">Add Transaction</button>
+      
+      <table id="transactions-table">
+        <thead>
+          <tr>
+            <th>Date</th>
+            <th>Description</th>
+            <th>Amount (R)</th>
+            <th>Type</th>
+            <th>Actions</th>
+          </tr>
+        </thead>
+        <tbody>
+          <!-- Transactions populated dynamically by JS -->
+        </tbody>
+      </table>
+    </section>
+
+    <!-- Transaction Form Modal -->
+    <div id="transaction-form-modal" class="modal hidden">
+      <div class="modal-content">
+        <span class="close-btn">&times;</span>
+        <h2>Add / Edit Transaction</h2>
+        <form id="transaction-form">
+          <label for="date">Date:</label>
+          <input type="date" id="date" required />
+
+          <label for="description">Description:</label>
+          <input type="text" id="description" placeholder="Description" required />
+
+          <label for="amount">Amount (R):</label>
+          <input type="number" id="amount" placeholder="Amount" step="0.01" required />
+
+          <label for="type">Type:</label>
+          <select id="type" required>
+            <option value="">Select</option>
+            <option value="Credit">Credit</option>
+            <option value="Debit">Debit</option>
+          </select>
+
+          <button type="submit">Save Transaction</button>
+        </form>
+      </div>
+    </div>
+  </main>
+
+  <!-- ===== FOOTER ===== -->
+  <footer>
+    <p>&copy; 2025 Ole Mokoma</p>
+  </footer>
+
+  <script src="transactions.js"></script>
+</body>
+</html>
+
+

@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Ole Mokoma | Calculator</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body class="calculator">
+
+  <!-- ===== NAVIGATION ===== -->
+  <header>
+    <nav class="navbar">
+      <div class="logo">Ole Mokoma</div>
+      <ul class="nav-links">
+        <li><a href="index.html">Dashboard</a></li>
+        <li><a href="transactions.html">Transactions</a></li>
+        <li><a href="analytics.html">Analytics</a></li>
+        <li><a href="calculator.html" class="active">Calculator</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+      <button class="nav-toggle" aria-label="Toggle menu">&#9776;</button>
+    </nav>
+  </header>
+
+  <!-- ===== MAIN CONTENT ===== -->
+  <main>
+    <section class="calculator-hero">
+      <h1>Financial Calculator</h1>
+      <p>Calculate monthly savings or loan payments.</p>
+    </section>
+
+    <section class="calculator-content">
+      <form id="calculator-form">
+        <label for="amount">Amount (R):</label>
+        <input type="number" id="amount" required />
+
+        <label for="rate">Interest Rate (%):</label>
+        <input type="number" id="rate" step="0.01" required />
+
+        <label for="months">Months:</label>
+        <input type="number" id="months" required />
+
+        <button type="submit">Calculate</button>
+      </form>
+
+      <div id="calculator-result"></div>
+    </section>
+  </main>
+
+  <!-- ===== FOOTER ===== -->
+  <footer>
+    <p>&copy; 2025 Ole Mokoma</p>
+  </footer>
+
+  <script src="calculator.js"></script>
+</body>
+</html>
+
